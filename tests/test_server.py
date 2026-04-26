@@ -77,9 +77,9 @@ def test_list_rules_returns_count_and_rules_keys():
 
 
 def test_list_rules_returns_at_least_the_known_rule_count():
-    # sql-sop v0.6.0 ships 32 SQL + 5 Python = 37 rules. New releases may add more.
+    # sql-sop v0.6.1 ships 33 SQL + 5 Python = 38 rules. New releases may add more.
     result = list_rules()
-    assert result["count"] >= 37
+    assert result["count"] >= 38
 
 
 def test_list_rules_includes_t_sql_safety_rules():

@@ -35,7 +35,7 @@ mcp = FastMCP(
         "(function on indexed column, leading-wildcard LIKE, OR across columns), "
         "5 T-SQL specific rules (NOLOCK, xp_cmdshell, deprecated outer join, etc.), "
         "and 5 Python source rules for sqlalchemy.text() / cursor.execute() injection. "
-        "37 rules in total. Returns one JSON object listing every finding plus a "
+        "38 rules in total. Returns one JSON object listing every finding plus a "
         "human-readable summary."
     )
 )
