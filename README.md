@@ -15,9 +15,9 @@ Two tools, both stdio-transport:
 | Tool | What it does |
 |---|---|
 | `lint_sql(sql, severity?, disable?)` | Run sql-sop against a SQL string. Returns `{passed, summary, findings[]}`. Each finding has `rule_id`, `severity`, `line`, `message`, `suggestion`. |
-| `list_rules()` | Return the full rule catalogue (38 rules in sql-sop v0.6.1). |
+| `list_rules()` | Return the full rule catalogue (43 rules in sql-sop v0.7.0; 48 with `--contract` enabled). |
 
-Backed by [sql-sop](https://github.com/Pawansingh3889/sql-guard) — a fast rule-based SQL linter with 33 SQL rules (including 5 T-SQL specific ones) and 5 Python source rules for SQL injection on `cursor.execute()` / `sqlalchemy.text()`. There's a [browser playground](https://pawansingh3889.github.io/sql-guard/) if you want to feel out the rules before wiring this up.
+Backed by [sql-sop](https://github.com/Pawansingh3889/sql-guard), a fast rule-based SQL linter with 38 SQL rules (including 5 T-SQL specific ones) and 5 Python source rules for SQL injection on `cursor.execute()` / `sqlalchemy.text()`. As of v0.7.0 it also offers an opt-in Contracts pack (5 schema-aware rules) for projects that maintain a YAML data contract. There's a [browser playground](https://pawansingh3889.github.io/sql-guard/) if you want to feel out the rules before wiring this up.
 
 ## Install
 
