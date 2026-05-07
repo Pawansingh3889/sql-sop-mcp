@@ -3,6 +3,7 @@
 [![PyPI](https://img.shields.io/pypi/v/sql-sop-mcp)](https://pypi.org/project/sql-sop-mcp/)
 [![Python](https://img.shields.io/pypi/pyversions/sql-sop-mcp)](https://pypi.org/project/sql-sop-mcp/)
 [![CI](https://github.com/Pawansingh3889/sql-sop-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/Pawansingh3889/sql-sop-mcp/actions/workflows/ci.yml)
+[![pre-commit.ci](https://results.pre-commit.ci/badge/github/Pawansingh3889/sql-sop-mcp/main.svg)](https://results.pre-commit.ci/latest/github/Pawansingh3889/sql-sop-mcp/main)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
 Model Context Protocol server that wires [sql-sop](https://pypi.org/project/sql-sop/) into any MCP-aware LLM client. Lets Claude Desktop, Cursor, ChatGPT desktop, Continue, and similar tools call sql-sop's linter as a callable tool from inside a chat.
