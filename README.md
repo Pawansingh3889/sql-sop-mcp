@@ -117,21 +117,21 @@ It then revises the query and lints again before showing it to you.
 
 ## When to use `disable`
 
-If the model is sure a rule is a false positive in context (e.g. a one-off admin script where SELECT * is genuinely fine), it can pass `disable: ["W001"]`. Treat this as the model's reasoning surface — read the suggested rationale, not just the final SQL.
+If the model is sure a rule is a false positive in context (e.g. a one-off admin script where SELECT * is genuinely fine), it can pass `disable: ["W001"]`. Treat this as the model's reasoning surface. Read the suggested rationale, not just the final SQL.
 
 ## Roadmap (open to PRs)
 
-- `lint_file(path)` — lint a file the LLM has access to via filesystem MCP
-- `explain_rule(rule_id)` — return the rule's full documentation, examples of pass/fail SQL
-- `lint_python_file(path)` — wrap the Python-source scanner so the LLM can audit `.py` files for `cursor.execute(f"...")` SQL injection
-- `suggest_index(sql, schema)` — emit candidate covering-index DDL based on the query
+- `lint_file(path)`: lint a file the LLM has access to via filesystem MCP
+- `explain_rule(rule_id)`: return the rule's full documentation, examples of pass/fail SQL
+- `lint_python_file(path)`: wrap the Python-source scanner so the LLM can audit `.py` files for `cursor.execute(f"...")` SQL injection
+- `suggest_index(sql, schema)`: emit candidate covering-index DDL based on the query
 
 ## Related
 
-- [sql-sop](https://pypi.org/project/sql-sop/) — the linter this server wraps. CLI, pre-commit hook, GitHub Action, browser playground
-- [pr-sop](https://pypi.org/project/pr-sop/) — sister tool for PR governance
-- [Model Context Protocol](https://modelcontextprotocol.io/) — the spec
-- [FastMCP](https://github.com/jlowin/fastmcp) — the Python framework this server is built on
+- [sql-sop](https://pypi.org/project/sql-sop/): the linter this server wraps. CLI, pre-commit hook, GitHub Action, browser playground
+- [pr-sop](https://pypi.org/project/pr-sop/): sister tool for PR governance
+- [Model Context Protocol](https://modelcontextprotocol.io/): the spec
+- [FastMCP](https://github.com/jlowin/fastmcp): the Python framework this server is built on
 
 ## License
 
